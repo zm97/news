@@ -1,0 +1,678 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>新闻</title>
+    <base target="_blank"/>
+    <!-- <base href="//www.china.com/" /> -->
+    <link rel="apple-touch-icon" href="//www.china.com/zh_cn/img1905/touch-icon.png">
+
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+    <div class="con">
+        <div class="dispDate" id="js-dispDate"></div>
+        <div class="headNav">
+            <span class="setHome"><a href="javascript:void(0);" id="js-setHome" target="_self">设为首页</a></span>
+            <span id="headNavLogin" class="headNavLogin">
+                <a id="headNav_reg" href="#" class="reg">注册</a>
+                <a id="headNav_login" href="#" class="login">登录</a>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="siteNav">
+    <div class="con clearfix">
+        <div class="item sn1">
+            <div class="item-row clearfix">
+                <strong><a href="#">新闻</a></strong>
+                <a href="#">国内</a>
+                <a href="#">国际</a>
+                <a href="#">文史</a>
+            </div>
+            <div class="item-row clearfix">
+                <strong><a href="#">军事</a></strong>
+                <a href="#">军图</a>
+                <a href="#">军史</a>
+                <a href="#">航空</a>
+            </div>
+        </div>
+
+        <div class="item sn2">
+            <div class="item-row clearfix">
+                <strong><a href="#">财经</a></strong>
+                <a href="#">宏观</a>
+                <a href="#">产经</a>
+                <a href="#">房产</a>
+            </div>
+            <div class="item-row clearfix">
+                <strong><a href="#">娱乐</a></strong>
+                <a href="#">电影</a>
+                <a href="#">趣图</a>
+                <a href="#">爆料</a>
+                <a href="#">明星</a>
+            </div>
+        </div>
+        <div class="item sn3">
+            <div class="item-row clearfix">
+                <strong><a href="#">汽车</a></strong>
+                <a href="#">新车</a>
+                <a href="#">报价</a>
+                <a href="#">图&emsp;片</a>
+            </div>
+            <div class="item-row clearfix">
+                <strong><a href="#">游戏</a></strong>
+                <a href="#">新游</a>
+                <a href="#">军游</a>
+                <a href="#">游戏厅</a>
+            </div>
+        </div>
+
+        <div class="item sn4">
+            <div class="item-row clearfix">
+                <strong><a href="#">政务</a></strong>
+                <a href="#">公益</a>
+                <a href="#">国防教育</a>
+            </div>
+            <div class="item-row clearfix">
+                <strong><a href="#">文化</a></strong>
+                <a href="#">非遗</a>
+                <a href="#">佛教</a>
+                <a href="#">守艺中华</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /siteNav -->
+
+<!-- 首屏 -->
+<div class="container c-main mt30">
+    <div class="colLM">
+        <div class="colL">
+            <!-- 焦点图 -->
+            <div class="focus js-focus">
+                <div class="focusCon">
+                    <div class="focusConItem">
+                        <div class="imgWide">
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="官宣！中国高铁突破3.5万公里" src="https://img01.imgcdc.com/www/20191224/41571577159301.jpg">
+                                    <p>官宣！中国高铁突破3.5万公里</p>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="imgList">
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="小小煎饼铺出脱贫路" src="https://img02.imgcdc.com/www/20191224/20291577154166.jpg">
+                                    <p>小小煎饼铺出脱贫路</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="这个国家被美国核爆67次"
+                                         src="https://img03.imgcdc.com/www/20191224/54411577151547.jpg">
+                                    <p>这个国家被美国核爆67次</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 焦点图：军事 -->
+                    <div class="focusConItem">
+                        <div class="imgWide">
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="豪华品牌的入门之争 20万买BBA你该选择谁？" src="https://img01.imgcdc.com/www/20191220/28951576806917.jpg">
+                                    <p>豪华品牌的入门之争 20万买BBA你该选择谁？</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="imgList">
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="2019最重磅的四款合资新车"
+                                         src="https://img02.imgcdc.com/www/20191218/82841576634814.jpg">
+                                    <p>2019最重磅的四款合资新车</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="测试比亚迪全新秦1.5L燃油版"
+                                         src="https://img04.imgcdc.com/www/20191217/90991576548468.jpg">
+                                    <p>测试比亚迪全新秦1.5L燃油版</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="focusConItem">
+                        <div class="imgWide">
+                            <div class="item">
+                                <a target="_blank"
+                                   href="#">
+                                    <img alt="“影视寒冬”让流量明星热度降温，演技派受热捧"
+                                         src="https://img02.imgcdc.com/www/20191224/65401577176674.jpg?now=85511577176707">
+                                    <p>“影视寒冬”让流量明星热度降温，演技派受热捧</p>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="imgList">
+                            <div class="item">
+                                <a target="_blank"
+                                   href="#">
+                                    <img alt="吃不完的宁波与台州味道"
+                                         src="https://img04.imgcdc.com/www/20191204/45421575426012.jpg?now=64481575426026">
+                                    <p>吃不完的宁波与台州味道</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank"
+                                   href="#">
+                                    <img alt="明清女画家笔下的女性之美"
+                                         src="https://img04.imgcdc.com/www/20191213/92081576202556.jpg?now=92911576202569">
+                                    <p>明清女画家笔下的女性之美</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="focusConItem">
+                        <div class="imgWide">
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="Steam一周销量排行夺冠"
+                                         src="https://img02.imgcdc.com/www/20191224/75171577151630.jpg?now=19521577151640">
+                                    <p>Steam一周销量排行夺冠</p>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="imgList">
+                            <div class="item">
+                                <a target="_blank" href="#">
+                                    <img alt="我的世界十年进化史"
+                                         src="https://img02.imgcdc.com/www/20191223/72681577063498.jpg?now=37681577063506">
+                                    <p>我的世界十年进化史</p>
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a target="_blank"
+                                   href="#">
+                                    <img alt="国外市场现山寨Switch"
+                                         src="https://img02.imgcdc.com/www/20191223/29441577063546.jpg?now=57621577063559">
+                                    <p>国外市场现山寨Switch</p>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="focusSlider" class="focusSlider"></div>
+                <div id="focusNav" class="focusNav">
+                    <span class="navBtn prev" id="focusPrev"></span>
+                    <span class="navBtn next" id="focusNext"></span>
+                </div>
+            </div>
+            <!-- /焦点图 -->
+
+            <div class="modHd mt30"><h3>视点</h3></div>
+            <div class="imgList">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="寻找百名最美美术教师" src="https://img01.imgcdc.com/www/20191022/17821571735337.jpg">
+                        <p>寻找百名最美美术教师</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="壮丽70年·奋斗新时代" src="https://img02.imgcdc.com/www/20191206/12071575594038.jpg">
+                        <p>壮丽70年·奋斗新时代</p>
+                    </a>
+                </div>
+
+            </div>
+            <ul class="chanList">
+                <li><a href="#" target="_blank"><span></span>“一国两制”成功实践庆祝澳门回归20周年</a></li>
+                <li><a href="#" target="_blank"><span>头条播报:</span>一声长叹之后中国足球须卧薪尝胆</a></li>
+                <li><a href="#" target="_blank"><span>头条播报:</span>这下连西方媒体都开始谴责香港暴徒了</a></li>
+
+            </ul>
+        </div>
+
+        <div class="colC">
+            <div class="spotlight" id="spotlight">
+                <h3 class="spotTabHd"><span class="active">要闻</span><span class="local" style="display:none;"><!-- 分地区 --></span>
+                </h3>
+                <div class="spotTabCon">
+                    <div class="spotCon">
+                        <ul class="longList">
+                            <li><strong><a href="#" target=_blank>十篇讲话，一个声音</a></strong></li>
+                            <li><a href="#" target=_blank>【年终报道】我们的新时代·字述2019旗</a></li>
+                            <li><a href="#" target=_blank>习近平年度金句</a>&nbsp;<a href="#" target=_blank>中华民族伟大复兴的前进步伐势不可挡</a></li>
+                            <li><a href="#" target=_blank>【中国稳健前行】法治体系：国家治理体系的骨干工程</a></li>
+                            <li><a href="#" target=_blank>香港球迷嘘国歌，处罚来了</a></li>
+                            <li>
+                                <a href="#" target=_blank>澳门回归20周年</a>&nbsp;
+                                <a href="#" target=_blank>影展</a>&nbsp;
+                                <a href="#" target=_blank>不忘初心</a>&nbsp;
+                                <a href="#" target=_blank>扫黑</a>&nbsp;
+                                <a href="#" target=_blank>新时代</a>&nbsp;
+                                <a href="#" target=_blank>四中全会</a>
+                            </li>
+
+                        </ul>
+                        <ul class="longList mt26">
+                            <li><strong><a href="#" target=_blank>中央首推香港官员任职联合国 林郑月娥：重大突破</a></strong></li>
+                            <li><a href="#" target=_blank>“暴徒装”劫匪日日犯案香港警方做出“新部署”</a></li>
+                            <li><a href="#" target=_blank>圣诞求救贺卡？这个英国"犯人"不甘寂寞又被打脸</a></li>
+                            <li><a href="#" target=_blank>5—15秒！2020年四川将实现地震秒级预警全域覆盖</a></li>
+                            <li><a href="#" target=_blank>9岁男孩扔盒装牛奶砸伤老人家长被判赔7万</a></li>
+                            <li><a href="#" target=_blank>携手奋进 共赢未来 ——中华网诚招合作伙伴</a></li>
+                        </ul>
+                    </div>
+                    <div class="newsRank spotCon" style="display:none;">
+                        <!-- 分地区 -->
+                    </div>
+                </div>
+            </div>
+            <div class="longList indusNews mt30" id="js-yw-hangye">
+                <ul>
+                    <li>
+                        <a href="#" target=_blank>[军事]</a>&nbsp;
+                        <a href="#" target=_blank>真的刀枪不入？越南军队展示硬气功 女兵超强悍</a>
+                    </li>
+                    <li>
+                        <a href="#" target=_blank>[财经]</a>&nbsp;
+                        <a href="#" target=_blank>王思聪在京被执行案和解：1.5亿已履行5000万</a>
+                    </li>
+                    <li>
+                        <a href="#">[汽车]</a>&nbsp;
+                        <a href="#" target=_blank>豪华品牌的入门之争 20万买BBA你该选择谁？</a>
+                    </li>
+                    <li>
+                        <a href="#" target=_blank>[文化]</a>&nbsp;
+                        <a href="#" target=_blank>撒贝宁年轻时照片曝光，网友惊叹：不愧是芳心纵火犯</a>
+                    </li>
+                    <li>
+                        <a href="#" target=_blank>[娱乐]</a>&nbsp;
+                        <a href="#" target=_blank>印中文的旧衣服 在非洲成了抢手货</a></li>
+                    <li>
+                        <a href="#" target=_blank>[游戏]</a>&nbsp;
+                        <a href="#" target=_blank>英国新一周实体游戏销量排行 使命召唤16第一</a></li>
+                    <li>
+                        <a href="#" target=_blank><B>[政务]</B></a>&nbsp;
+                        <a href="#" target=_blank>下乡送培训 上门查血压 看看这个团队在干啥</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="colR">
+        <div class="sideMod brandActivity">
+            <div class="hd">
+                <h2><strong>品牌</strong>活动</h2>
+            </div>
+            <div class="bd sideImgWide">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="守艺中华" src="https://img01.imgcdc.com/www/20190603/47651559543193.jpg">
+                        <p>守艺中华</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="守艺中华" src="https://img01.imgcdc.com/www/20190603/47651559543193.jpg">
+                        <p>守艺中华</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="守艺中华" src="https://img01.imgcdc.com/www/20190603/47651559543193.jpg">
+                        <p>守艺中华</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /首屏 c-main -->
+
+<!-- 军事 -->
+<div class="container c-military mt40" id="js-c-military">
+    <div class="colLM">
+        <div class="colHd">
+            <h2><a href="#" target="_blank">军事</a></h2>
+            <ul class="nav">
+                <li><a href="#" target="_blank">中国军情</a></li>
+                <li><a href="#" target="_blank">热点话题</a></li>
+                <li><a href="#" target="_blank">军事酷图</a></li>
+            </ul>
+        </div>
+
+        <div class="colL">
+            <div class="imgWide" id="js-mil-imgWide"></div>
+
+            <div class="modHd mt10"><h3>军事图库</h3></div>
+            <div class="imgList" id="js-mil-imgList"></div>
+        </div>
+
+        <div class="colC">
+            <ul class="longList" id="js-mil-longList"></ul>
+        </div>
+    </div>
+    <div class="colR">
+        <div class="sideMod miliSide-1">
+            <div class="hd">
+                <h2>军事评论</h2>
+                <div class="more"><a href="#" target="_blank">更多</a></div>
+            </div>
+            <div class="bd">
+                <ul class="sideFeatList js-sideFeatList" id="js-mil-jspl"></ul>
+            </div>
+        </div>
+        <div class="sideMod miliSide-2">
+            <div class="hd">
+                <h2>军史秘闻</h2>
+                <div class="more"><a href="#" target="_blank">更多</a></div>
+            </div>
+            <div class="bd">
+                <ul class="sideFeatList js-sideFeatList" id="js-mil-jsmw"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /军事 -->
+
+<!-- 文化 -->
+<div class="container c-culture mt20">
+    <div class="colLM">
+        <div class="colHd">
+            <h2><a href="#" target="_blank">文化</a></h2>
+            <ul class="nav">
+                <li><a href="#" target="_blank">艺文</a></li>
+                <li><a href="#" target="_blank">文创</a></li>
+                <li><a href="#" target="_blank">文旅</a></li>
+                <li><a href="#" target="_blank">守艺</a></li>
+            </ul>
+        </div>
+        <div class="colL">
+            <div class="imgWide">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="他是北京唯一糕点模具木刻手艺传承人，独守手艺48载" src="https://img0.utuku.china.com/300x0/culture/20191223/d1070b0b-796c-4629-b32a-90ee5075e044.jpg">
+                        <p>他是北京唯一糕点模具木刻手艺传承人，独守手艺48载</p>
+                    </a>
+                </div>
+            </div>
+            <div class="imgList">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="背负上“文化输出”重任的李子柒 为什么这样红？" src="https://img3.utuku.china.com/650x0/culture/20191213/4e406705-86c1-48ad-9179-3453a9a4b76e.jpg">
+                        <p>背负上“文化输出”重任的李子柒 为什么这样红？</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="荣誉加身的《唐顿庄园》终于在大荧幕上完美收官" src="https://img0.utuku.china.com/600x0/culture/20191212/05ebbfea-e680-42ed-8fc8-1e7b1672b842.jpg">
+                        <p>荣誉加身的《唐顿庄园》终于在大荧幕上完美收官</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="colC">
+            <ul class="longList">
+                <li><strong><a href="#" target="_blank">“影视寒冬”让流量明星热度降温，演技派受热捧</a></strong></li>
+                <li><a href="#" target="_blank">撒贝宁年轻时照片曝光，网友惊叹：不愧是芳心纵火犯</a></li>
+                <li><a href="#" target="_blank">国家大剧院12周年公众开放日迎1.2万观众</a></li>
+                <li><a href="#" target="_blank">《只有芸知道》或成冯小刚近年来票房最差电影</a></li>
+                <li><a href="#" target="_blank">到首博穿越数百年“读”中轴</a></li>
+                <li><a href="#" target="_blank">背负上“文化输出”重任的李子柒为什么这样红？</a></li>
+            </ul>
+            <ul class="longList mt26">
+                <li><a href="#" target="_blank">他是北京唯一糕点模具木刻手艺传承人，独守手艺48载</a></li>
+                <li><a href="#" target="_blank">自古文人多食客：跟李渔学做笋，跟袁枚学烹豆腐……</a></li>
+                <li><a href="#" target="_blank">辣椒被当作花卉耽误多年大概是没早遇到四川&quot;吃货&quot;</a></li>
+                <li><a href="#" target="_blank">这里不仅有复古赛车,还有浓浓的60年代英伦味道</a></li>
+                <li><a href="#" target="_blank">四川一明代古墓出土500年前鸡蛋</a></li>
+                <li><a href="#" target="_blank">三天两夜，吃不完的宁波与台州味道</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="colR">
+        <div class="sideMod culSide-1">
+            <div class="hd">
+                <h2>专题策划</h2>
+            </div>
+            <div class="bd">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="重阳：任时光倏忽，许岁月温良" src="https://img03.imgcdc.com/www/20191009/20881570606447.jpg">
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="古都新韵 京彩北京" src="https://img03.imgcdc.com/www/20191009/85141570606319.jpg?now=23781570606017">
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="sideMod culSide-2">
+            <div class="hd">
+                <h2>文化图集</h2>
+                <div class="more"><a href="#" target="_blank">更多</a></div>
+            </div>
+            <div class="bd">
+                <div class="sideImgList">
+                    <div class="item">
+                        <a target="_blank" href="#">
+                            <img alt="明清女画家笔下的女性之美"
+                                 src="https://img3.utuku.china.com/300x0/culture/20191213/3a9ee07b-34c2-4344-8940-16c5c4ef8b87.jpg">
+                            <p class="imgTit">明清女画家笔下的女性之美</p>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a target="_blank"
+                           href="#">
+                            <img alt="这里不仅有复古赛车, 还有浓浓的60年代英伦味道" src="https://img0.utuku.china.com/650x0/culture/20191209/caa8ddb8-b168-4e37-95e0-f48f080e9de5.jpg">
+                            <p class="imgTit">这里不仅有复古赛车, 还有浓浓的60年代英伦味道</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /文化 -->
+
+<!-- 经济 -->
+<div class="container c-economy mt20" id="js-c-economy">
+    <div class="colLM">
+        <div class="colHd">
+            <h2><a href="#" target="_blank">财经</a></h2>
+            <ul class="nav">
+                <li><a href="#" target="_blank">海外经济</a></li>
+                <li><a href="#" target="_blank">产经商贸</a></li>
+                <li><a href="#" target="_blank">金融动态</a></li>
+            </ul>
+        </div>
+        <div class="colL">
+            <div class="imgWide" id="js-cj-imgWide"></div>
+            <div class="imgList" id="js-cj-imgList"></div>
+        </div>
+        <div class="colC">
+            <ul class="longList" id="js-cj-longList"></ul>
+        </div>
+    </div>
+    <div class="colR">
+        <div class="sideMod ecoSide-1">
+            <div class="hd">
+                <h2>天天315</h2>
+                <div class="more"><a href="#" target="_blank">更多</a></div>
+            </div>
+            <div class="bd">
+                <ul class="sideFeatList" id="js-cj-consume1"></ul>
+            </div>
+        </div>
+        <div class="sideMod ecoSide-2 mt20">
+            <div class="hd">
+                <h2>财富故事</h2>
+                <div class="more"><a href="#" target="_blank">更多</a></div>
+            </div>
+            <div class="bd">
+                <div class="sideImgList" id="js-cj-cfgs"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 汽车 -->
+<div class="container c-auto mt20">
+    <div class="colLM">
+        <div class="colHd">
+            <h2><a href="#" target="_blank">汽车</a></h2>
+            <ul class="nav">
+                <li><a href="#" target="_blank">文章</a></li>
+                <li><a href="#" target="_blank">新车</a></li>
+                <li><a href="#" target="_blank">视频</a></li>
+                <li><a href="#" target="_blank">选车</a></li>
+                <li><a href="#" target="_blank">报价</a></li>
+            </ul>
+        </div>
+        <div class="colL">
+            <div class="imgWide">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="豪华品牌的入门之争 20万买BBA你该选择谁？" src="https://img01.imgcdc.com/www/20191220/14581576806957.jpg">
+                        <p>豪华品牌的入门之争 20万买BBA你该选择谁？</p>
+                    </a>
+                </div>
+            </div>
+            <div class="imgList">
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="兑现买车flag 2019最重磅的四款合资新车有哪些？" src="https://img01.imgcdc.com/www/20191218/43231576635181.jpg">
+                        <p>兑现买车flag 2019最重磅的四款合资新车有哪些？</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="拒绝城市的浮躁 测试比亚迪全新秦1.5L燃油版" src="https://img04.imgcdc.com/www/20191217/71101576548576.jpg">
+                        <p>拒绝城市的浮躁 测试比亚迪全新秦1.5L燃油版</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="colC">
+            <ul class="longList">
+                <li><strong><a href="#" target="_blank">特斯拉在华第300座超充站落成V3充电桩年底投入使用</a></strong></li>
+                <li><a href="#" target="_blank">售价13.202万元 吉利icon银河限量版上市</a></li>
+                <li><a href="#" target="_blank">全新CT5畅销迹象明显 凯迪拉克11月销量1.68万台</a></li>
+                <li><a href="#" target="_blank">基本保留概念车设计 全新瑞虎7家族官图发布</a></li>
+                <li><a href="#" target="_blank">续航里程410公里 雪佛兰畅巡北京市场开启预售 </a></li>
+                <li><a href="#" target="_blank">比埃尔法定位更高 雷克萨斯LM明年2月上市</a></li>
+            </ul>
+            <ul class="longList mt26">
+                <li><a href="#" target="_blank">赋能汽车行业新生态 中国汽研指数年度盛典圆满举行</a></li>
+                <li><a href="#" target="_blank">全新一代雅力士售价约合8.95万起 有望明年2月开售</a></li>
+                <li><a href="#" target="_blank">或于明年2月上市 2020款宋Pro将配NFC钥匙</a></li>
+                <li><a href="#" target="_blank">吉利11月销量143234辆 同比/环比双增长冲刺年销目标</a></li>
+                <li><a href="#" target="_blank">长安汽车11月销量134736辆 CS75PLUS不愧销量担当</a></li>
+                <li><a href="#" target="_blank">最大功率可达1013Ps Lucid Air原型车谍照曝光</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="colR">
+        <div class="sideMod">
+            <div class="hd">
+                <h2>评测</h2>
+                <div class="more"><a href="#" target="_blank">更多</a></div>
+            </div>
+            <div class="bd autoPeople">
+                <div class="item">
+                    <a href="#" target="_blank">
+                        <div class="pic"><img src="https://img04.imgcdc.com/www/20190926/32331569460236.jpg" alt="">
+                        </div>
+                        <div class="txt">汽车试驾长城炮</div>
+                    </a>
+                </div>
+                <div class="item">
+                    <a href="#" target="_blank">
+                        <div class="pic"><img src="https://img03.imgcdc.com/www/20190919/52401568855575.jpg" alt=""></div>
+                        <div class="txt">评测雷克萨斯UX 260h</div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="sideMod mt10">
+            <div class="hd">
+                <h2>编辑策划</h2>
+            </div>
+            <div class="bd autoEditor">
+                <div class="item active">
+                    <a target="_blank" href="#">
+                        <img alt="豪华版名副其实 艾力绅锐·混动购车手册" src="https://img01.imgcdc.com/www/20190925/80891569372293.jpg">
+                        <p>豪华版名副其实 艾力绅锐·混动购车手册</p>
+                    </a>
+                </div>
+                <div class="item">
+                    <a target="_blank" href="#">
+                        <img alt="新威朗令人担心的不是三缸机 而是丢失了豪华感"
+                             src="https://img03.imgcdc.com/www/20190927/63801569546395.jpg">
+                        <p class="imgTit">新威朗令人担心的不是三缸机 而是丢失了豪华感</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- /汽车 -->
+<div class="footer mt30">
+    <div class="footNav container">
+        <ul class="clearfix">
+            <li class="first"><a href="#" target="_blank" class="fnFirst">首页</a></li>
+            <li><a href="#" target="_blank">新闻</a></li>
+            <li><a href="#" target="_blank">军事</a></li>
+            <li><a href="#" target="_blank">财经</a></li>
+            <li><a href="#" target="_blank">汽车</a></li>
+            <li><a href="#" target="_blank">科技</a></li>
+            <li><a href="#" target="_blank">游戏</a></li>
+            <li><a href="#" target="_blank">娱乐</a></li>
+            <li><a href="#" target="_blank">文化</a></li>
+            <li><a href="#" target="_blank">房产</a></li>
+            <li><a href="#" target="_blank">健康</a></li>
+        </ul>
+    </div>
+    <div class="licence">
+        <span></span><span>违法和不良信息举报电话：xxx-xxxxxx</span>
+        <span>举报信箱：<a href="#">xxxxx@163.com</a></span>
+    </div>
+    <div class="about">
+        <div class="container">
+            <a href="#" target="_blank">关于我们</a>|
+            <a href="#" target="_blank">广告服务</a>|
+            <a href="#" target="_blank">联系我们</a>|
+            <a href="#" target="_blank">招聘信息</a>|
+            <a href="#" target="_blank">版权声明</a>|
+            <a href="#" target="_blank">豁免条款</a>|
+            <a href="#" target="_blank">友情链接</a>|
+            <a href="#" target="_blank">动态</a>
+            <span class="fr">@版权所有</span>
+        </div>
+    </div>
+</div>
+<script src="js/china_core.js"></script>
+<script src="js/jquery.SuperSlide.2.1.3.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
